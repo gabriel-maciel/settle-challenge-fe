@@ -7,10 +7,10 @@ const RatesTable = ({ rates }) => {
             return (
                 <tr key={r._id}>
                     <td>{r.pair}</td>
-                    <td>r.originalRate)</td>
-                    <td>r.fee)</td>
-                    <td>r.feeAmount</td>
-                    <td>r.rateWithFee</td>
+                    <td>{r.originalRate}</td>
+                    <td>{r.fee}</td>
+                    <td>{r.feeAmount}</td>
+                    <td>{r.rateWithFee}</td>
                 </tr>
             )
         })
