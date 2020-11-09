@@ -7,19 +7,14 @@ const RatesTable = ({ rates }) => {
             return (
                 <tr key={r._id}>
                     <td>{r.pair}</td>
-                    <td>{parse(r.originalRate)}</td>
-                    <td>{parse(r.fee)}</td>
-                    <td>{parse(r.feeAmount)}</td>
-                    <td>{parse(r.rateWithFee)}</td>
+                    <td>r.originalRate)</td>
+                    <td>r.fee)</td>
+                    <td>r.feeAmount</td>
+                    <td>r.rateWithFee</td>
                 </tr>
             )
         })
     }
-
-    const parse = (s) => {
-        return s.toString().match(/[0-9]+\.[0-9]{2}/g);
-    }
-
 
     return (
         <div className='ui container'>
